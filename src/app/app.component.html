@@ -1,0 +1,42 @@
+<div>
+<h1>Temperature Monitor</h1>
+<form>
+ 
+<label for="temperature">Add Temperature:</label>
+<input type ="text" name="temperature" id="temperature" [(ngModel)]="number1" required>
+  <input type ="text" name="temperature" id="temperature" [(ngModel)]="number2" required>
+  <input type ="text" name="temperature" id="temperature" [(ngModel)]="number3" required>
+  <input type ="text" name="temperature" id="temperature" [(ngModel)]="number4" required>
+  
+  <button text="Calculate" (click)="calculate()">ADD</button>
+
+</form>
+<hr />
+<section>
+  <button>Get Median Temperature</button>
+  Current Median:
+  <!-- display current media here-->
+  
+  <pre>{{ number1 }}</pre>
+  <pre>{{ number2 }}</pre>
+  <pre>{{ number3 }}</pre>
+  <pre>{{ number4 }}</pre>
+  <h4>Total:</h4>
+  <pre>{{ result/2 }}</pre>
+</section>
+
+<hr>
+<hr>
+<p>developer name: Neeraja Ganesh</p>
+
+<hr>
+</div>
+
+
+
+  
+
+
+
+  
+
